@@ -1,0 +1,229 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+.wrapper{
+	width:1170px;
+	margin:auto;
+}
+
+header{
+	background: linear-gradient(rgba(0,0,0,0),rgba(0,0,0,0)),url("image1.jpg");
+	height: 100vh;
+	-webkit-background-size:cover;
+	background-size: cover;
+	background-position: center center;
+	position: relative;
+	color: #fff;
+}
+
+.nav-area{
+	float: right;
+	list-style: none;
+	margin-top: 30px;
+}
+.nav-area li{
+	display: inline-block;
+}
+.nav-area li a{
+   color: #fff;
+   text-decoration: none;
+   padding: 5px 20px;
+   font-family: poppins;
+   font-size: 14px;
+}
+.nav-area li a:hover{
+	background: #fff;
+	color: #333;
+}
+
+.Welcome-text{
+	position: absolute;
+	width: 600px;
+	height: 300px;
+	margin: 20% 30%;
+	text-align: center;
+}
+.Welcome-text h1{
+	text-align: center;
+	color: #fff;
+	text-transform: uppercase;
+	font-size: 60px;
+}
+.Welcome-text a{
+	border: 1px solid #fff;
+	padding: 10px 25px;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-size: 14px;
+	margin-top: 20px;
+	display: inline-block;
+	color: #fff;
+}
+.Welcome-text a:hover{
+	background: #fff;
+	color:#333;
+}
+
+.ok, .show-companies, .show-categories, .show-medicines, .show-medshops {
+	width: 100%;
+	height: 500px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.ok div a, .show-companies div a, .show-categories div a, .show-medicines a, .show-companies div div:first-child, .show-categories div div:first-child, .show-medicines div div:first-child, .show-medshops div div:first-child {
+	display: block;
+	text-decoration: none;
+	margin-bottom: 15px;
+	background-color: #f53b57;
+	font-family: Arial, Helvetica, sans-serif;
+	padding: 5px 20px;
+	border-radius: 5px;
+	text-align: center;
+	cursor: pointer;
+	color: white;
+	font-size: 20px;
+} 
+
+.add-company, .add-category, .add-shop, .add-medicine, .show-companies {
+	width: 100%;
+	height: 500px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.add-company div, .add-category div, .add-shop div, .add-medicine div {
+	margin-bottom: 10px;
+}
+
+.add-company input, .add-company button, .add-category input, .add-category button, .add-shop input, .add-shop button, .add-medicine input, .add-medicine select, .add-medicine button {
+	width: 300px;
+	height: 30px;
+	border: 1px solid #2c3e50;
+	outline: none;
+	border-radius: 5px;
+	color: white;
+	background: transparent;
+	font-family: Arial, Helvetica, sans-serif;
+	padding: 5px;
+	font-size: 20px;
+}
+
+.add-company div:last-child, .add-category div:last-child, .add-shop div:last-child, .add-medicine div:last-child {
+	margin-top: 30px;
+}
+
+.add-company button, .add-category button, .add-shop button, .add-medicine button, .add-medicine select {
+	width: 312px;
+	padding: 10px;
+	height: 40px;
+	background-color: #f53b57;
+	border: none;
+	cursor: pointer;
+}
+
+.add-medicine select {
+	background-color: transparent;
+	border: 1px solid #2c3e50;
+	height: 45px;
+	padding-left: 0px;
+}
+
+.show-companies {
+	height: 100%;
+}
+
+.show-companies div div:first-child, .show-categories div div:first-child, .show-medicines div div:first-child, .show-medshops div div:first-child {
+	background-color: transparent ;
+	font-style: italic;
+	font-size: 25px;
+	margin-bottom: 50px;
+	border-bottom: 1px solid white;
+	border-radius: 0px;
+}
+
+.shop {
+	background-color: #f53b57;
+	padding: 5px 20px;
+	font-style: italic;
+	font-size: 18px;
+	border-radius: 5px;
+	font-family: Arial, Helvetica, sans-serif;
+	text-align: center;
+	margin-bottom: 20px;
+}
+
+.shop p {
+	padding-bottom: 10px;
+}
+
+.shop p:last-child {
+	padding-bottom: 0px;
+}
+
+.new-container {
+	width: calc(100% - 100px);
+	padding: 0px 50px;
+	position: absolute;
+	top: 100px;
+}
+
+.select-container {
+	width: 100%;
+	height: 100px;
+	display: flex;
+	justify-content: space-between;
+}
+
+.select-container form {
+	display: block;
+	height: 100px;
+	width: 30%;
+}
+
+.select-container select, .select-container button {
+	display: block;
+	height: 40px;
+	width: 100%;
+	margin-bottom: 10px;
+	border-radius: 5px;
+	border: none;
+	outline: none;
+	font-size: 16px;
+}
+
+
+.select-container button {
+	background-color: #f53b57;
+	color: white;
+	font-family: Arial, Helvetica, sans-serif;
+	cursor: pointer;
+	font-size: 20px;
+}
+
+.read-container {
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	padding-top: 30px;
+}
+
+.each_shop {
+	margin: 15px 5px;
+	width: 21%;
+	padding: 20px;
+	border-radius: 5px;
+	color: white;
+	text-align: center;
+	background-color: #34495e;
+	font-size: 18px;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+.each_shop p {
+	padding: 5px;
+}

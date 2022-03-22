@@ -1,0 +1,11 @@
+body{
+    background-color:#8D95F5;
+    background: url("image1.jpg");
+	background-size: cover; 
+}
+center{
+	color: #fff;
+}
+h4{
+	color:#fff;
+}
